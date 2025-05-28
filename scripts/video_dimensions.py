@@ -24,9 +24,10 @@ def get_video_dimensions(input_path):
 
     return width, height
 
-# 使用示例
-input_video_path = 'test_input_video.mp4'
-width, height = get_video_dimensions(input_video_path)
-if width is not None and height is not None:
-    print(f"视频的宽度: {width} 像素")
-    print(f"视频的高度: {height} 像素")
+if __name__ == "__main__":
+    # 使用示例
+    input_video_path = 'test_input_video.mp4'
+    width, height = get_video_dimensions(input_video_path)
+    if width is not None and height is not None:
+        print(f"视频的宽度: {width} 像素")
+        print(f"视频的高度: {height} 像素")
