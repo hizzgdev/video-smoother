@@ -152,5 +152,5 @@ if __name__ == "__main__":
     crop_y = 0
     crop_width = 100
     crop_height = 100
-    video_smoother = VideoSmoother(input_video_path, output_video_path, still_time_threshold=2.0, crop=True, crop_x=crop_x, crop_y=crop_y, crop_width=crop_width, crop_height=crop_height)
+    video_smoother = VideoSmoother(input_video_path, output_video_path, still_time_threshold=2.0, crop=crop, crop_x=crop_x, crop_y=crop_y, crop_width=crop_width, crop_height=crop_height)
     video_smoother.process_video()
